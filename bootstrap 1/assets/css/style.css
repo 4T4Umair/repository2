@@ -1,0 +1,90 @@
+.ball{
+    height: 4px;
+    width: 4px;
+    border-radius: 50%;
+    background-color: black;
+    position: relative;
+    left: 4px;
+}
+button{
+    display: flex;
+    padding: 11px;
+    align-items: center;
+}
+button:hover .ball{
+    animation: ball .7s ease-in-out 0s infinite alternate-reverse;
+}
+@keyframes ball {
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-10px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+.photo:hover img{
+    animation: photo 0.7s ease-in-out 0s 1 forwards;
+    /* transform: translateY(-10px); */
+}
+@keyframes photo {
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-20px);
+    }
+    100%{
+        transform: translateY(-20px);
+    }
+}
+.parent1{
+    position: relative;
+}
+.kid1{
+    position: absolute;
+    top: 60px;
+}
+.kid2{
+    position: absolute;
+    top: 280px;
+    left: 220px;
+}
+.kid3{
+    position: relative;
+    top: 200px;
+}
+.kid3 p{
+    position: relative;
+    left: 100px;
+    top: 70px;
+}
+.kid3 button{
+    position: relative;
+    left: 100px;
+    top: 150px;
+}
+.pp{
+    display: flex;
+    justify-content: space-around;
+}
+.kid9{
+    height: 80px;
+    width: 80px;
+}
+.kid8 img:hover{
+    animation: kid8 1s ease-in-out 0s 1 forwards;
+}
+@keyframes kid8 {
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-20px);
+    }
+    100%{
+        transform: translateY(-20px);
+    }
+}
